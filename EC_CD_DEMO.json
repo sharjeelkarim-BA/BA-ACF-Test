@@ -1,0 +1,3089 @@
+{
+    "sections": [
+        {
+            "type": "SECTION",
+            "code": "thA",
+            "serial": 1,
+            "serialLabel": "",
+            "title": "Sociodemographic Profile",
+            "hint": "Indicate the complete sociodemographic profile of the child.",
+            "extendedView": true,
+            "regExPattern": "",
+            "maxLimit": 0,
+            "canComment": false,
+            "futureDateAllowed": false,
+            "children": [
+                {
+                    "type": "Q_DROPDOWN",
+                    "code": "thA1",
+                    "serial": 1,
+                    "serialLabel": "",
+                    "title": "Child’s Handedness",
+                    "hint": "Select appropriate option",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "options": [
+                        {
+                            "optionNumber": 1,
+                            "weight": -1,
+                            "label": "Right",
+                            "inactive": false
+                        },
+                        {
+                            "optionNumber": 2,
+                            "weight": -1,
+                            "label": "Left",
+                            "inactive": false
+                        },
+                        {
+                            "optionNumber": 3,
+                            "weight": -1,
+                            "label": "Both",
+                            "inactive": false
+                        },
+                        {
+                            "optionNumber": 4,
+                            "weight": -1,
+                            "label": "Not yet established",
+                            "inactive": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false
+                },
+                {
+                    "type": "Q_DROPDOWN",
+                    "code": "thA2",
+                    "serial": 2,
+                    "serialLabel": "",
+                    "title": "Is the child presently studying?",
+                    "hint": "Select appropriate option",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "options": [
+                        {
+                            "optionNumber": 1,
+                            "weight": -1,
+                            "label": "Yes",
+                            "inactive": false
+                        },
+                        {
+                            "optionNumber": 2,
+                            "weight": -1,
+                            "label": "No",
+                            "inactive": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false
+                },
+                {
+                    "type": "Q_TEXT_FIELD",
+                    "code": "thA3",
+                    "serial": 3,
+                    "serialLabel": "",
+                    "title": "If Yes, write name of child’s school / learning center / day care:",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 100,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false,
+                    "required": true
+                },
+                {
+                    "type": "Q_TEXT_FIELD",
+                    "code": "thA4",
+                    "serial": 4,
+                    "serialLabel": "",
+                    "title": "Father’s Name:",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 256,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "componentType": "IDF_GUARDIAN_LIST",
+                        "fetchType": "SNAPSHOT",
+                        "fieldSelection": "NAME"
+                    },
+                    "optional": false,
+                    "required": true
+                },
+                {
+                    "type": "Q_TEXT_FIELD",
+                    "code": "thA5",
+                    "serial": 5,
+                    "serialLabel": "",
+                    "title": "Father’s Age:",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 100,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false,
+                    "required": true
+                },
+                {
+                    "type": "Q_TEXT_FIELD",
+                    "code": "thA6",
+                    "serial": 6,
+                    "serialLabel": "",
+                    "title": "Father’s Occupation:",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 100,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false,
+                    "required": true
+                },
+                {
+                    "type": "Q_TEXT_FIELD",
+                    "code": "thA7",
+                    "serial": 7,
+                    "serialLabel": "",
+                    "title": "Father’s Educational Attainment:",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 100,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false,
+                    "required": true
+                },
+                {
+                    "type": "Q_TEXT_FIELD",
+                    "code": "thA8",
+                    "serial": 8,
+                    "serialLabel": "",
+                    "title": "Mother’s Name:",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 100,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false,
+                    "required": true
+                },
+                {
+                    "type": "Q_TEXT_FIELD",
+                    "code": "thA9",
+                    "serial": 9,
+                    "serialLabel": "",
+                    "title": "Mother’s Age:",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 100,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false,
+                    "required": true
+                },
+                {
+                    "type": "Q_TEXT_FIELD",
+                    "code": "thA10",
+                    "serial": 10,
+                    "serialLabel": "",
+                    "title": "Mother’s Occupation:",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 100,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false,
+                    "required": true
+                },
+                {
+                    "type": "Q_TEXT_FIELD",
+                    "code": "thA11",
+                    "serial": 11,
+                    "serialLabel": "",
+                    "title": "Mother’s Educational Attainment:",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 100,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false,
+                    "required": true
+                },
+                {
+                    "type": "Q_INTEGER",
+                    "code": "thA12",
+                    "serial": 12,
+                    "serialLabel": "",
+                    "title": "Child’s Number of Siblings",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false
+                },
+                {
+                    "type": "Q_TEXT_FIELD",
+                    "code": "thA13",
+                    "serial": 13,
+                    "serialLabel": "",
+                    "title": "Child’s Birth Order:",
+                    "hint": "For example, 1st, 2nd, 3rd, etc.",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 100,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false,
+                    "required": true
+                }
+            ],
+            "externalDataFetchProps": {
+                "readonly": false,
+                "fieldSelection": ""
+            },
+            "optional": false
+        },
+        {
+            "type": "SECTION",
+            "code": "thB",
+            "serial": 2,
+            "serialLabel": "",
+            "title": "Computation of the Child’s Age",
+            "hint": "After verifying the dates, compute the child’s age by subtracting the date he was born from the date the test was administered. Each month is composed of 30 days. Do not round off the months or years.Write the examiner’s name each time the test is administered.",
+            "extendedView": true,
+            "regExPattern": "",
+            "maxLimit": 0,
+            "canComment": false,
+            "futureDateAllowed": false,
+            "children": [
+                {
+                    "type": "Q_GENERIC_TABULAR",
+                    "code": "thB1",
+                    "serial": 1,
+                    "serialLabel": "",
+                    "title": "Assessment Table",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 3,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "itemKey": "thB1a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Choose the assessment:",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "1st assessment",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "2nd assessment",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 3,
+                                    "weight": -1,
+                                    "label": "3rd assessment",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_DATE",
+                            "itemKey": "thB1b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Date Tested:",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_FIELD",
+                            "itemKey": "thB1c",
+                            "serial": 3,
+                            "serialLabel": "",
+                            "title": "Examiner’s Name:",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 100,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false
+                }
+            ],
+            "externalDataFetchProps": {
+                "readonly": false,
+                "fieldSelection": ""
+            },
+            "optional": false
+        },
+        {
+            "type": "SECTION",
+            "code": "thC",
+            "serial": 3,
+            "serialLabel": "",
+            "title": "Gross Motor Domain",
+            "hint": "",
+            "extendedView": true,
+            "regExPattern": "",
+            "maxLimit": 0,
+            "canComment": false,
+            "futureDateAllowed": false,
+            "children": [
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thC1",
+                    "serial": 1,
+                    "serialLabel": "1",
+                    "title": "Climbs on chair or other elevated piece of furniture like a bed without help",
+                    "hint": "<b><i>Parental report will suffice.</i></b>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thC1a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thC1b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thC2",
+                    "serial": 2,
+                    "serialLabel": "2",
+                    "title": "Walks backwards",
+                    "hint": "<b>MATERIAL:</b> toy <br> <b>PROCEDURE:</b>Ask the child to walk backwards by demonstrating this. <i>Credit if the child is able to walk backwards without falling and holding on to anything. <b>Parental report will suffice.</b></i>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thC2a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thC2b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thC3",
+                    "serial": 3,
+                    "serialLabel": "3",
+                    "title": "Runs without tripping or falling",
+                    "hint": "<b>MATERIAL:</b> ball<br> <b>PROCEDURE:</b>Encourage the child to run by rolling a ball across the floor.<i>Credit if the child can run fast and smoothly without tripping or falling.</i>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thC3a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thC3b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thC4",
+                    "serial": 4,
+                    "serialLabel": "4",
+                    "title": "Walks down stairs, two feet on each step, with one hand held",
+                    "hint": "<b><i>Parental report will suffice.</i></b>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thC4a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thC4b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thC5",
+                    "serial": 5,
+                    "serialLabel": "5",
+                    "title": "Walks upstairs holding onto a handrail, two feet on each step",
+                    "hint": "<b>MATERIAL:</b> toy<br> <b>PROCEDURE:</b>Place a toy in the middle of the step and ask the child to walk up the stairs to get the toy.<i>Credit if the child walks up the stairs using the handrail or wall for support and places both feet on each step before stepping on the next one. <b>Parental report will suffice.</b></i>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thC5a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thC5b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thC6",
+                    "serial": 6,
+                    "serialLabel": "6",
+                    "title": "Walks upstairs with alternate feet without holding onto a handrail",
+                    "hint": "<b>MATERIAL:</b> toy<br> <b>PROCEDURE:</b>Place a toy in the middle of the step and ask the child to walk upstairs to get the toy.<i>Credit if the child walks upstairs, alternating his feet as he steps on each successive step without holding on to the handrail or wall for support. <b>Parental report will suffice.</b></i>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thC6a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thC6b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thC7",
+                    "serial": 7,
+                    "serialLabel": "7",
+                    "title": "Walks downstairs with alternate feet without holding onto a handrail",
+                    "hint": "<b>MATERIAL:</b> toy<br> <b>PROCEDURE:</b>Place a toy in the middle of the step and ask the child to walk downstairs to get the toy.<i>Credit if the child walks down- stairs, alternating his feet as he steps on each successive step without holding onto the handrail or wall for support. Do not give credit if the child places both feet on the step or uses the handrail or wall for support. <b>Parental report will suffice.</b></i>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thC7a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thC7b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thC8",
+                    "serial": 8,
+                    "serialLabel": "8",
+                    "title": "Moves body part as directed",
+                    "hint": "<b>PROCEDURE:</b> Ask the child to raise both arms.",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thC8a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thC8b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thC9",
+                    "serial": 9,
+                    "serialLabel": "9",
+                    "title": "Jumps up",
+                    "hint": "<b><i>This must be elicited by the interviewer.</i></b>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thC9a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thC9b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "Q_TEXT_FIELD",
+                    "code": "thC14",
+                    "serial": 10,
+                    "serialLabel": "",
+                    "title": "TOTAL SCORE",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 100,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false,
+                    "required": true
+                }
+            ],
+            "externalDataFetchProps": {
+                "readonly": false,
+                "fieldSelection": ""
+            },
+            "optional": false
+        },
+        {
+            "type": "SECTION",
+            "code": "thD",
+            "serial": 4,
+            "serialLabel": "",
+            "title": "Fine Motor Domain",
+            "hint": "",
+            "extendedView": true,
+            "regExPattern": "",
+            "maxLimit": 0,
+            "canComment": false,
+            "futureDateAllowed": false,
+            "children": [
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thD1",
+                    "serial": 1,
+                    "serialLabel": "1",
+                    "title": "Uses all five fingers to get food/toys placed on a flat surface",
+                    "hint": "<b>MATERIAL:</b> small toy /object<br><b>PROCEDURE:</b>Seat the child on the parent’s lap with his elbows at level with the tabletop and his hands on the table or flat surface. Drop a small toy in front of him and attract his attention by pointing to the toy or tapping the table/flat surface. <i>Credit if the child picks up the toy, using all five fingers as if raking.</i>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thD1a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thD1b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thD2",
+                    "serial": 2,
+                    "serialLabel": "2",
+                    "title": "Picks up objects with thumb and index finger",
+                    "hint": "<b>MATERIAL:</b> any small toy or food<br><b>PROCEDURE:</b>Place a toy/food in front of the child and within his reach. Attract his attention by tapping near the toy/food.<i>Credit if the child uses the tips of his thumb and index or forefinger to pick up the toy/food.</i>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thD2a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thD2b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thD3",
+                    "serial": 3,
+                    "serialLabel": "3",
+                    "title": "Displays a definite hand preference",
+                    "hint": "<b>MATERIAL:</b> toy<br><b>PROCEDURE:</b>Place the toy directly in front of the child at midline (not to his left or his right) and ask him to reach for this.<i>Credit if he uses the same hand two out of three times. <b>Parental report will suffice.</b></i>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thD3a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thD3b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "Q_TEXT_FIELD",
+                    "code": "thD12",
+                    "serial": 4,
+                    "serialLabel": "",
+                    "title": "TOTAL SCORE",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 100,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false,
+                    "required": true
+                }
+            ],
+            "externalDataFetchProps": {
+                "readonly": false,
+                "fieldSelection": ""
+            },
+            "optional": false
+        },
+        {
+            "type": "SECTION",
+            "code": "thE",
+            "serial": 5,
+            "serialLabel": "",
+            "title": "Self-Help Domain",
+            "hint": "",
+            "extendedView": true,
+            "regExPattern": "",
+            "maxLimit": 0,
+            "canComment": false,
+            "futureDateAllowed": false,
+            "children": [
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thE1",
+                    "serial": 1,
+                    "serialLabel": "",
+                    "title": "Feeding sub-domain",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thE2",
+                    "serial": 2,
+                    "serialLabel": "1",
+                    "title": "Displays a definite hand preference",
+                    "hint": "<b>MATERIAL:</b> toy<br><b>PROCEDURE:</b>Place the toy directly in front of the child at midline (not to his left or his right) and ask him to reach for this.<i>Credit if he uses the same hand two out of three times. <b>Parental report will suffice.</b></i>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thE2a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thE2b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thE3",
+                    "serial": 3,
+                    "serialLabel": "2",
+                    "title": "Feeds self using fingers to eat rice/viands with spillage",
+                    "hint": "<b><i>Parental report will suffice.</i></b>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thE3a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thE3b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thE14",
+                    "serial": 4,
+                    "serialLabel": "",
+                    "title": "Dressing sub-domain",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thE15",
+                    "serial": 5,
+                    "serialLabel": "14",
+                    "title": "Participates when being dressed (e.g., raises arms or lifts leg)",
+                    "hint": "<b><i>Parental report will suffice.</i></b>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thE15a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thE15b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thE16",
+                    "serial": 6,
+                    "serialLabel": "15",
+                    "title": "Pulls down gartered short pants",
+                    "hint": "<b><i>Parental report will suffice.</i></b>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thE16a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thE16b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thE19",
+                    "serial": 7,
+                    "serialLabel": "",
+                    "title": "Toilet Training sub-domain",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thE20",
+                    "serial": 8,
+                    "serialLabel": "19",
+                    "title": "Informs the adult only after he has already urinated (peed) or moved his bowels (poohed) in his underpants",
+                    "hint": "<b><i>Parental report will suffice.</i></b>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thE20a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thE20b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thE21",
+                    "serial": 9,
+                    "serialLabel": "20",
+                    "title": "Informs the adult of need to urinate (pee) or move bowels (pooh-pooh) so he can be brought to a designated place (e.g., comfort room)",
+                    "hint": "<b><i>Parental report will suffice.</i></b>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thE21a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thE21b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thE24",
+                    "serial": 10,
+                    "serialLabel": "",
+                    "title": "Bathing sub-domain",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thE25",
+                    "serial": 11,
+                    "serialLabel": "24",
+                    "title": "Participates when bathing (e.g., rubbing arms with soap)",
+                    "hint": "<b><i>Parental report will suffice.</i></b>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thE25a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thE25b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thE26",
+                    "serial": 12,
+                    "serialLabel": "25",
+                    "title": "Washes and dries hands without any help",
+                    "hint": "<i>Ask the caregiver if the child can wash and dry his hands without any help or supervision except to turn on/off faucets that are out of reach.</i>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thE26a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thE26b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "Q_TEXT_FIELD",
+                    "code": "thE28",
+                    "serial": 13,
+                    "serialLabel": "",
+                    "title": "TOTAL SCORE",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 100,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false,
+                    "required": true
+                }
+            ],
+            "externalDataFetchProps": {
+                "readonly": false,
+                "fieldSelection": ""
+            },
+            "optional": false
+        },
+        {
+            "type": "SECTION",
+            "code": "thF",
+            "serial": 6,
+            "serialLabel": "",
+            "title": "Receptive Language Domain",
+            "hint": "",
+            "extendedView": true,
+            "regExPattern": "",
+            "maxLimit": 0,
+            "canComment": false,
+            "futureDateAllowed": false,
+            "children": [
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thF1",
+                    "serial": 1,
+                    "serialLabel": "1",
+                    "title": "Points to a family member when asked to do so",
+                    "hint": "<b>PROCEDURE:</b> Ask the child to point to his mother/caregiver. <i>Credit if he does so.</i>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thF1a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thF1b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thF2",
+                    "serial": 2,
+                    "serialLabel": "2",
+                    "title": "Points to five body parts on himself when asked to do so",
+                    "hint": "<b>PROCEDURE:</b> Have the child point to his eyes, nose, mouth, hands and feet or other body part. <i>Credit if he can point to all these.</i>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thF2a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thF2b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "Q_TEXT_FIELD",
+                    "code": "thF6",
+                    "serial": 3,
+                    "serialLabel": "",
+                    "title": "TOTAL SCORE",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 100,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false,
+                    "required": true
+                }
+            ],
+            "externalDataFetchProps": {
+                "readonly": false,
+                "fieldSelection": ""
+            },
+            "optional": false
+        },
+        {
+            "type": "SECTION",
+            "code": "thG",
+            "serial": 7,
+            "serialLabel": "",
+            "title": "Expressive Language Domain",
+            "hint": "",
+            "extendedView": true,
+            "regExPattern": "",
+            "maxLimit": 0,
+            "canComment": false,
+            "futureDateAllowed": false,
+            "children": [
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thG1",
+                    "serial": 1,
+                    "serialLabel": "1",
+                    "title": "Uses five to 20 recognizable words",
+                    "hint": "<b>PROCEDURE:</b> Ask the caregiver if the child can clearly say five to six words aside from mama and papa. This will be the minimum number.",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thG1a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thG1b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thG2",
+                    "serial": 2,
+                    "serialLabel": "2",
+                    "title": "Uses pronouns (e.g. I, me, ako, akin)",
+                    "hint": "<b><i>Parental report will suffice.</i></b>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thG2a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thG2b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "Q_TEXT_FIELD",
+                    "code": "thG9",
+                    "serial": 3,
+                    "serialLabel": "",
+                    "title": "TOTAL SCORE",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 100,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false,
+                    "required": true
+                }
+            ],
+            "externalDataFetchProps": {
+                "readonly": false,
+                "fieldSelection": ""
+            },
+            "optional": false
+        },
+        {
+            "type": "SECTION",
+            "code": "thH",
+            "serial": 8,
+            "serialLabel": "",
+            "title": "Cognitive Domain",
+            "hint": "",
+            "extendedView": true,
+            "regExPattern": "",
+            "maxLimit": 0,
+            "canComment": false,
+            "futureDateAllowed": false,
+            "children": [
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thH1",
+                    "serial": 1,
+                    "serialLabel": "1",
+                    "title": "Looks in the direction of fallen object",
+                    "hint": "<b>MATERIAL:</b> spoon/ball<br><b>PROCEDURE:</b> With the child seated, get his attention and drop a spoon/ ball in front of him. Then observe if his eyes look down as it falls. <i>Credit if the child can bring his eyes and head down as the object falls.</i>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thH1a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thH1b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thH2",
+                    "serial": 2,
+                    "serialLabel": "2",
+                    "title": "Looks for a partially hidden object",
+                    "hint": "<b>MATERIAL:</b> ball, small towel/cloth<br><b>PROCEDURE:</b> With the child facing you, partially hide a ball behind a small towel and observe if he will look for it and find it. <i>Credit if the child pulls the towel and gets the hidden ball.</i>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thH2a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thH2b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "Q_TEXT_FIELD",
+                    "code": "thH22",
+                    "serial": 3,
+                    "serialLabel": "",
+                    "title": "TOTAL SCORE",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 100,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false,
+                    "required": true
+                }
+            ],
+            "externalDataFetchProps": {
+                "readonly": false,
+                "fieldSelection": ""
+            },
+            "optional": false
+        },
+        {
+            "type": "SECTION",
+            "code": "thI",
+            "serial": 9,
+            "serialLabel": "",
+            "title": "Social-Emotional Domain",
+            "hint": "",
+            "extendedView": true,
+            "regExPattern": "",
+            "maxLimit": 0,
+            "canComment": false,
+            "futureDateAllowed": false,
+            "children": [
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thI1",
+                    "serial": 1,
+                    "serialLabel": "1",
+                    "title": "Enjoys watching activities of nearby people or animals",
+                    "hint": "<b><i>Parental report will suffice.</i></b>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thI1a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thI1b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thI2",
+                    "serial": 2,
+                    "serialLabel": "2",
+                    "title": "Friendly with strangers but initially may show slight anxiety or shyness",
+                    "hint": "<b><i>Parental report will suffice.</i></b>",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "code": "thI2a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Present",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Yes",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "No",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thI2b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Comments",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                },
+                {
+                    "type": "Q_TEXT_FIELD",
+                    "code": "thI25",
+                    "serial": 3,
+                    "serialLabel": "",
+                    "title": "TOTAL SCORE",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 100,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false,
+                    "required": true
+                }
+            ],
+            "externalDataFetchProps": {
+                "readonly": false,
+                "fieldSelection": ""
+            },
+            "optional": false
+        },
+        {
+            "type": "SECTION",
+            "code": "thJ",
+            "serial": 10,
+            "serialLabel": "",
+            "title": "For Examiner",
+            "hint": "",
+            "extendedView": true,
+            "regExPattern": "",
+            "maxLimit": 0,
+            "canComment": false,
+            "futureDateAllowed": false,
+            "children": [
+                {
+                    "type": "Q_TEXT_FIELD",
+                    "code": "thJ1",
+                    "serial": 1,
+                    "serialLabel": "",
+                    "title": "Name of examiner:",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 100,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false,
+                    "required": true
+                },
+                {
+                    "type": "Q_DATE",
+                    "code": "thJ2",
+                    "serial": 2,
+                    "serialLabel": "",
+                    "title": "Date administered:",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false
+                },
+                {
+                    "type": "Q_TEXT_FIELD",
+                    "code": "thJ3",
+                    "serial": 3,
+                    "serialLabel": "",
+                    "title": "Place where test is administered:",
+                    "hint": "",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 100,
+                    "canComment": true,
+                    "futureDateAllowed": false,
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false,
+                    "required": true
+                },
+                {
+                    "type": "READONLY_TEXT",
+                    "code": "thJ4",
+                    "serial": 4,
+                    "serialLabel": "",
+                    "title": "To the examiner :",
+                    "hint": "Please fill out the spaces below for additional information. Thank you very much.<br>Write down your notes, descriptions and observations on the following points:",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 0,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thJ4a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Child’s background",
+                            "hint": "For example, behavior/health/etc.",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thJ4b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Family environment",
+                            "hint": "For example, Health of family members/family problems/ economic conditions/etc.",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thJ4c",
+                            "serial": 3,
+                            "serialLabel": "",
+                            "title": "Parents’ stimulating activities for the child",
+                            "hint": "What are the activities/things that the parents do to help stimulate the child’s development?",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thJ4d",
+                            "serial": 4,
+                            "serialLabel": "",
+                            "title": "Home environment",
+                            "hint": "For example, Facilities/type of house/ household items/interaction/etc.",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_AREA",
+                            "code": "thJ4e",
+                            "serial": 5,
+                            "serialLabel": "",
+                            "title": "Others",
+                            "hint": "",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 3000,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": true
+                }
+            ],
+            "externalDataFetchProps": {
+                "readonly": false,
+                "fieldSelection": ""
+            },
+            "optional": false
+        },
+        {
+            "type": "SECTION",
+            "code": "thK",
+            "serial": 11,
+            "serialLabel": "",
+            "title": "Domain Scoring",
+            "hint": "Transfer the raw score for each domain in the table below. Using the <b>Scaled Score Equivalent of Raw Scores Table</b>, convert the raw scores to Scaled Scores appropriate to the age of the child. To arrive at the Sum of Scaled Scores, add the Scaled Scores across all domains. To derive the Standard Score, refer to the <b>Standard Score Equivalent of Sums of Scaled Scores Table</b>. Write the Child’s age on each evaluation.",
+            "extendedView": true,
+            "regExPattern": "",
+            "maxLimit": 0,
+            "canComment": false,
+            "futureDateAllowed": false,
+            "children": [
+                {
+                    "type": "Q_GENERIC_TABULAR",
+                    "code": "thK1",
+                    "serial": 1,
+                    "serialLabel": "",
+                    "title": "Domain Scoring Table",
+                    "extendedView": true,
+                    "regExPattern": "",
+                    "maxLimit": 7,
+                    "canComment": false,
+                    "futureDateAllowed": false,
+                    "children": [
+                        {
+                            "type": "Q_DROPDOWN",
+                            "itemKey": "thK1a",
+                            "serial": 1,
+                            "serialLabel": "",
+                            "title": "Domain",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": true,
+                            "futureDateAllowed": false,
+                            "options": [
+                                {
+                                    "optionNumber": 1,
+                                    "weight": -1,
+                                    "label": "Gross Motor",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 2,
+                                    "weight": -1,
+                                    "label": "Fine Motor",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 3,
+                                    "weight": -1,
+                                    "label": "Self-Help",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 4,
+                                    "weight": -1,
+                                    "label": "Receptive Language",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 5,
+                                    "weight": -1,
+                                    "label": "Expressive Language",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 6,
+                                    "weight": -1,
+                                    "label": "Cognitive",
+                                    "inactive": false
+                                },
+                                {
+                                    "optionNumber": 7,
+                                    "weight": -1,
+                                    "label": "Social- Emotional",
+                                    "inactive": false
+                                }
+                            ],
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_DATE",
+                            "itemKey": "thK1b",
+                            "serial": 2,
+                            "serialLabel": "",
+                            "title": "Date",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 0,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_FIELD",
+                            "itemKey": "thK1c",
+                            "serial": 3,
+                            "serialLabel": "",
+                            "title": "Raw Score",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 100,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        },
+                        {
+                            "type": "Q_TEXT_FIELD",
+                            "itemKey": "thK1d",
+                            "serial": 4,
+                            "serialLabel": "",
+                            "title": "Scaled Score",
+                            "extendedView": true,
+                            "regExPattern": "",
+                            "maxLimit": 100,
+                            "canComment": false,
+                            "futureDateAllowed": false,
+                            "externalDataFetchProps": {
+                                "readonly": false,
+                                "fieldSelection": ""
+                            },
+                            "optional": false
+                        }
+                    ],
+                    "externalDataFetchProps": {
+                        "readonly": false,
+                        "fieldSelection": ""
+                    },
+                    "optional": false
+                }
+            ],
+            "externalDataFetchProps": {
+                "readonly": false,
+                "fieldSelection": ""
+            },
+            "optional": false
+        }
+    ],
+    "algorithmOutputItems": [],
+    "algorithmBySerial": {},
+    "assessmentDateItemCode": null,
+    "populatableItems": [],
+    "validateRequiredOn": [],
+    "liveItems": [],
+    "componentTypes": [
+        "IDF_GUARDIAN_LIST"
+    ],
+    "optionRefs": [],
+    "sharingConfig": {
+        "items": []
+    },
+    "demographicItemList": [
+        "INDIVIDUAL_NAME",
+        "GENDER",
+        "DOB",
+        "RESIDENTIAL_ADDRESS"
+    ],
+    "searchListerConfig": {
+        "selectedColumns": []
+    },
+    "conditionalItems": {},
+    "acfPromptConfigs": []
+}
